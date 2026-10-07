@@ -1,0 +1,7 @@
+:root {
+  /*  ここにお好きな推しのカラーコード（#から始まる6桁）を設定します */
+  --md-primary-fg-color:        #ff69b4; /* ヘッダーや見出しの色（メインカラー） */
+  --md-primary-fg-color--light: #ffb6c1; /* 薄めのアクセント色 */
+  --md-primary-fg-color--dark:  #c71585; /* 濃いめのアクセント色 */
+  --md-accent-fg-color:         #ff1493; /* ボタンやリンクなどの強調色 */
+}
