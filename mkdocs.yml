@@ -1,0 +1,43 @@
+site_name: 🌸 OSHI-KATSU HUB
+site_description: 推しの活動記録・参戦レポ・プロフィールまとめ
+
+theme:
+  name: material
+  language: ja
+  palette:
+    # ライトモード
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: ダークモードに切り替え
+    # ダークモード
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: ライトモードに切り替え
+
+  features:
+    - navigation.expand       # サイドメニューを常に開く
+    - navigation.top          # ページ上部に戻るボタンを表示
+    - search.suggest          # 検索窓でキーワード予測
+    - search.highlight        # 検索結果をハイライト
+
+# カスタムデザイン（推し色カラーコードの読み込み）
+extra_css:
+  - stylesheets/extra.css
+
+# 拡張機能
+markdown_extensions:
+  - attr_list
+  - admonition                # 注釈・コールアウトボックス
+  - pymdownx.details          # 折りたたみ（アコーディオン）
+  - pymdownx.superfences      # 高機能コードブロック
+  - pymdownx.emoji:           # 絵文字対応
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:          # タブ切り替え表示
+      alternate_style: true
+
+# ナビゲーション（メニュー構造）
+nav:
+  - 🏠 HOME: index.md
